@@ -1,0 +1,120 @@
+/* Menggunakan Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Gaya dasar */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 20px; /* Tambahkan padding untuk memberikan ruang pada perangkat kecil */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-right: 20px; /* Tambahkan margin kanan untuk memberikan ruang antara teks dan logo */
+    color: #5a67d8;
+    text-align: center; /* Pastikan teks judul rata tengah */
+}
+
+.logo {
+    width: 50px; /* Atur ukuran logo */
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px; /* Batasi lebar maksimum form */
+}
+
+input[type="date"], button {
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px; /* Tambahkan margin bawah untuk memberikan ruang */
+}
+
+button {
+    background-color: #5a67d8;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #434190;
+}
+
+#result {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center; /* Pastikan teks hasil rata tengah */
+    margin-top: 20px; /* Tambahkan margin atas untuk memberikan ruang */
+}
+
+#result h2, #result p {
+    color: #333;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input[type="date"], button {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    form {
+        width: 100%;
+        padding: 10px;
+    }
+
+    input[type="date"], button {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Umur</title>
+    <meta name="description" content="Kalkulator umur yang responsif dan mudah digunakan untuk menghitung umur berdasarkan tanggal lahir.">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Kalkulator Umur</h1>
+            <img src="images/logo.png" alt="Logo" class="logo">
+        </div>
+        <form id="ageForm">
+            <label for="tanggalLahir">Tanggal Lahir:</label>
+            <input type="date" id="tanggalLahir" name="tanggalLahir" required>
+            <button type="submit">Hitung Umur</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
